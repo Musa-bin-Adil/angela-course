@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  background-color: #4287f5;
+}
+.cool{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.cool .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.cool .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: rgb(4, 4, 81);
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:#4287f5;
+  border-left: 2px solid rgb(4, 4, 81);
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+.profile{
+    color:rgb(4, 4, 81);
+    text-align: center;
+    font-family: "Merriweather", serif;
+    margin: 100px 0;
+}
+
+.profile-pic{
+    border-radius: 100%;
+}
+
+.intro{
+    color: white;
+    margin: 20px;
+}
+
+.Skills{
+    display: flex;
+    color: rgb(4, 4, 81);
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.laptop{
+    float: right;
+    border-radius: 25%;
+}
+
+.header{
+    margin: 20px;
+    color: rgb(4, 4, 81);
+}
+
+.contact{
+    margin-top: 300px;
+}
+
+.Touch{
+    display: flex;
+    color: rgb(4, 4, 81);
+    justify-content: center;
+    font-size: xx-large;
+}    
+
+.love{
+    display: flex;
+    color: rgb(4, 4, 81);
+    justify-content: center;
+   margin: 50px;
+}    
+
+.lets{
+    display: flex;
+    color: white;
+    justify-content: center;
+}    
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    text-decoration: underline;
+  }
+  
+  .copyright {
+    color: black;
+    font-size: 0.75rem;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    line-height: 2;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .copyright{
+    padding-left: 50%;
+  }
+
+  .bottom-container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding-left: 20%;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #eaf6f6;
+  }
